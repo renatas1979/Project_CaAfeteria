@@ -1,0 +1,32 @@
+kebab_menu = {
+    "Liuks kebabas": 3.90,
+    "Didelis kebabas": 3.50,
+    "Mažas kebabas": 3.00,
+    "Didelis kebabas su stix lazdelėmis": 3.80,
+    "Mažas kebabas su stix lazdelėmis": 3.20,
+    "Kebabas lėkštėje su gruzdintomis bulvytėmis": 4.00,
+    "Didelis kebabas su falafeliais": 3.50,
+    "Mažas kebabas su falafeliais": 3.00,
+}
+
+pizza_menu_32_cm = {
+    "Trijų mėsų 32 cm": 5.99,
+    "Margarita 32 cm": 5.99,
+    "Vegetariška 32 cm": 5.99,
+    "Capricciosa 32 cm": 5.99,
+    "Kumpio 32 cm": 5.99,
+    "Havajų 32 cm": 5.99,
+    "Saliami 32 cm": 5.99,
+    "Megėjų 32 cm": 5.99,
+    "Naminė 32 cm": 5.99,
+    "Sočioji BBQ 32 cm": 5.99,
+    "Čipotle 32 cm": 5.99,
+    "Karai Toskana 32 cm": 5.99,
+    "Vištienos BBQ 32 cm": 5.99,
+    "Viduržemio 32 cm": 6.60,
+    "Veganų 32 cm": 8.10,
+    "Meksikietiška 32 cm (aštru)": 5.99,
+    "Havana 32 cm (aštru)": 5.99,
+    "Akapulko 32 cm (aštru)": 5.99,
+    "Teksaso 32 cm (aštru)": 5.99,
+}
