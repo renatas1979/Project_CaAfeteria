@@ -32,8 +32,11 @@ class Reservations:
             )
             if choice.lower() == "r":
                 enter_name = input("Please enter your name for the reservation: ")
+                # Atnaujinimas užsakymo numerio
+                new_booking_number = str(int(max(self.bookings.values())) + 1).zfill(6)
+                self.bookings[enter_name] = new_booking_number
                 print(
-                    f"Welcome to Cafeteria, {enter_name}! Your table has been reserved."
+                    f"Great {enter_name}! Your table has been reserved. Your booking nr is: {new_booking_number}"
                 )
             elif choice.lower() == "w":
                 print("Welcome to Cafeteria! Feel free to walk in.")
@@ -54,7 +57,5 @@ class Reservations:
             print("Invalid input. Please try again.")
 
 
-# Sukuriam Reservations objektą
 reservations = Reservations()
-# Tikrinam užsakymą
 reservations.check_booking()
