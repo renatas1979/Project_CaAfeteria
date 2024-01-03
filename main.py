@@ -9,8 +9,8 @@ Base = declarative_base()
 #     "association",
 #     Base.metadata,
 #     #     Column("id", Integer, primary_key=True),
-#     #     Column("movie_id", Integer, ForeignKey("movie.id")),
-#     #     Column("actor_id", Integer, ForeignKey("actor.id")),
+#     #     Column("menu_id", Integer, ForeignKey("menu.id")),
+#     #     Column("tables_2_places", Integer, ForeignKey("tables_2_places.id")),
 # )
 
 
@@ -19,17 +19,24 @@ class Menu(Base):
     id = Column(Integer, primary_key=True)
     food_name = Column(String)
     price = Column(Float)
-    # actors = relationship("Actor", secondary=association_table, back_populates="movies")
 
 
-class Tables(Base):
-    __tablename__ = "tables"
+class Tables_2_places(Base):
+    __tablename__ = "tables_2"
     id = Column(Integer, primary_key=True)
-    two_places = Column(String)
-    four_places = Column(String)
-    six_places = Column(String)
     condition = Column(String)
-    # movies = relationship("Movie", secondary=association_table, back_populates="actors")
+
+
+class Tables_4_places(Base):
+    __tablename__ = "tables_4"
+    id = Column(Integer, primary_key=True)
+    condition = Column(String)
+
+
+class Tables_6_places(Base):
+    __tablename__ = "tables_6"
+    id = Column(Integer, primary_key=True)
+    condition = Column(String)
 
 
 class Reservations(Base):
@@ -39,13 +46,11 @@ class Reservations(Base):
     client_surname = Column(String)
     client_phone = Column(String)
     booking_nr = Column(String)
-    # movies = relationship("Movie", secondary=association_table, back_populates="actors")
 
 
 class Orders(Base):
     __tablename__ = "orders"
     id = Column(Integer, primary_key=True)
-    
 
 
 Base.metadata.create_all(engine)
