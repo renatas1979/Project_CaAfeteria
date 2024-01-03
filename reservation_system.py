@@ -32,7 +32,7 @@ class Reservations:
             )
             if choice.lower() == "r":
                 enter_name = input("Please enter your name for the reservation: ")
-                # Atnaujinimas užsakymo numerio
+
                 new_booking_number = str(int(max(self.bookings.values())) + 1).zfill(6)
                 self.bookings[enter_name] = new_booking_number
                 print(
